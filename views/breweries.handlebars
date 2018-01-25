@@ -1,0 +1,16 @@
+<h1>Breweries</h1>
+{{#each content}}
+    <li><h2>{{name}}</h2></li>
+    <li>{{address}}</li>
+    <li>{{creationDate}}</li>
+    <li>{{country}}</li>
+    <li>{{brand}}</li>
+    <li>{{description}}</li>
+    <a href="/breweriesPut/{{_id}}">Modifier</a><br/>
+    <a href="/delete/{{_id}}">Supprimer</a>
+{{/each}}
+<br/>
+<br/>
+<br/>
+<br/>
+<a href="/breweriesAdd">Ajouter une brasserie</a>  
